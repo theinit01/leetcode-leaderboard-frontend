@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { Container, Row, Col } from 'react-bootstrap';
-import UserCard from './UserCard'; // Assuming UserCard component exists
+import UserCard from './UserCard';
 
 const LeaderboardUsers = () => {
   const [users, setUsers] = useState([]);

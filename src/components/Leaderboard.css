@@ -14,7 +14,7 @@
 
 /* Ensure the container spans the full height */
 .container-full-height {
-    min-height: calc(100vh - 80px); /* Adjust based on your Navbar height */
+    min-height: calc(100vh - 80px); /* Adjusting based on the Navbar height */
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -26,7 +26,7 @@
     border-radius: 8px; /* Rounded corners */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Shadow */
     transition: box-shadow 0.3s ease; /* Smooth shadow transition */
-    height: auto; /* Adjust height as necessary */
+    height: auto; /* Adjust height if necessary */
   }
   
   .leaderboard-card:hover {

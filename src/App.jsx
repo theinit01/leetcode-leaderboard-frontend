@@ -6,7 +6,7 @@ import Leaderboard from './components/Leaderboard';
 import AddUser from './components/AddUser';
 import UsersPage from './components/UsersPage';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import './App.css'; // Add your custom CSS
+import './App.css';
 
 function App() {
   return (
@@ -18,7 +18,6 @@ function App() {
             <Route path="/" element={<Leaderboard />} />
             <Route path="/add_user" element={<AddUser />} />
             <Route path="/users" element={<UsersPage />} />
-            {/* Add other routes here */}
           </Routes>
         </div>
       </div>
