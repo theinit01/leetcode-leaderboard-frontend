@@ -1,0 +1,79 @@
+  .username {
+    flex: 1;
+    text-align: left;
+  }
+  
+  .questions {
+    flex: 2;
+    text-align: right;
+  }
+
+#cont{
+    margin-top: 50%;
+}
+
+/* Ensure the container spans the full height */
+.container-full-height {
+    min-height: calc(100vh - 80px); /* Adjust based on your Navbar height */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  
+  .leaderboard-card {
+    border: 1px solid #ccc; /* Border */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Shadow */
+    transition: box-shadow 0.3s ease; /* Smooth shadow transition */
+    height: auto; /* Adjust height as necessary */
+  }
+  
+  .leaderboard-card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Darker shadow on hover */
+    transform: translateY(-5px);
+  }
+  
+  /* Card body styles */
+  .leaderboard-card .card-body {
+    padding: 1rem; /* Reduced padding */
+  }
+  
+  /* Title and text styles */
+  .leaderboard-card .card-title {
+    font-size: 1.2rem; /* Adjusted font size */
+    margin-bottom: 0.5rem;
+  }
+  
+  .leaderboard-card .card-text {
+    font-size: 1rem; /* Adjusted font size */
+  }
+  
+  /* Ensure the buttons are properly spaced */
+  .button-group {
+    margin-bottom: 20px;
+  }
+
+  #gold {
+    background-color: #ffd900d2;
+  }
+  
+  #silver {
+    background-color: #c7c7c7db;
+  }
+  
+  #bronze {
+    background-color: #d78c42ea; /* bronze color */
+  }
+
+  #default {
+    background-color: #faebd730;
+  }
+
+  .main-content {
+    margin-bottom: 80px; /* Adjust the space between content and footer as needed */
+  }
+  
+  
+
+  
