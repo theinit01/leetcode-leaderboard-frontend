@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import { Container, Card, Button, Row, Col } from 'react-bootstrap';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import './Leaderboard.css'; // Import your custom CSS file
 
 const Leaderboard = () => {
@@ -23,6 +25,7 @@ const Leaderboard = () => {
       })
       .catch(error => {
         console.error(`Error fetching ${type} leaderboard:`, error);
+        toast.error(`Error fetching ${type} leaderboard: ${error.message}`);
       });
   };
 
@@ -55,6 +58,7 @@ const Leaderboard = () => {
 
   return (
     <Container className="leaderboard-container text-center container-full-height">
+      <ToastContainer position="top-right" autoClose={3000} />
       <h1 className="my-4">LeetCode Leaderboard</h1>
       <div className="button-group mb-3">
         <Button variant="secondary" className="me-2" onClick={() => setSortType('easy')}>Easy</Button>

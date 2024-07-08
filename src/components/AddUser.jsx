@@ -27,7 +27,7 @@ const AddUser = () => {
 
   return (
     <Container className="text-center">
-      <ToastContainer position="top-center" autoClose={5000} />
+      <ToastContainer position="top-right" autoClose={5000} />
       <h2 className="my-4">Add User</h2>
       <Form onSubmit={handleSubmit} className="mx-auto" style={{ maxWidth: '400px', boxShadow: '0 4px 8px rgba(0,0,0,0.1)', padding: '20px', borderRadius: '8px', backgroundColor: '#f8f9fa' }}>
         <Form.Group className="mb-3">
