@@ -10,7 +10,7 @@ const AddUser = () => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    axios.post('http://localhost:5000/add_user', { username: username }, {
+    axios.post('https://leetcode-one.vercel.app/add_user', { username: username }, {
       headers: {
         'Authorization': token  // Replace with your actual secret token
       }

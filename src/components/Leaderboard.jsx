@@ -14,7 +14,7 @@ const Leaderboard = () => {
   }, [sortType]);
 
   const fetchLeaderboard = (type) => {
-    axios.get(`http://localhost:5000/leaderboard/${type}`)
+    axios.get(`https://leetcode-one.vercel.app/leaderboard/${type}`)
       .then(response => {
         // Assign ranks based on the index of each user
         const rankedUsers = response.data.map((user, index) => ({
