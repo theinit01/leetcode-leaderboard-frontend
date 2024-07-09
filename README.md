@@ -13,7 +13,7 @@ This project is a web application to track and display the performance of users 
 ## Technologies Used
 
 - **Frontend**: React, React Router, Bootstrap
-- **Backend**: Flask
+- **Backend**: Flask, PostgreSQL
 - **Styling**: Custom CSS, Bootstrap
 
 ## Getting Started
