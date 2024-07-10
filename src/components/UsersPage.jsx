@@ -12,7 +12,7 @@ const LeaderboardUsers = () => {
 
   const fetchUsers = async () => {
     try {
-      const response = await axios.get('https://leetcode-one.vercel.app/all_users');
+      const response = await axios.get('https://leetcode-leaderboardbackend.vercel.app/all_users');
       setUsers(response.data);
     } catch (error) {
       console.error('Error fetching users:', error);

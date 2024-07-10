@@ -3,7 +3,7 @@ import axios from 'axios';
 import { Container, Card, Button, Row, Col, Spinner } from 'react-bootstrap';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import './Leaderboard.css'; // Import your custom CSS file
+import './Leaderboard.css';
 
 const Leaderboard = () => {
   const [users, setUsers] = useState([]);
@@ -16,7 +16,7 @@ const Leaderboard = () => {
 
   const fetchLeaderboard = (type) => {
     setLoading(true);
-    axios.get(`https://leetcode-one.vercel.app/leaderboard/${type}`)
+    axios.get(`https://leetcode-leaderboardbackend.vercel.app/leaderboard/${type}`)
       .then(response => {
         // Assign ranks based on the index of each user
         const rankedUsers = response.data.map((user, index) => ({
@@ -70,7 +70,7 @@ const Leaderboard = () => {
         <Button variant="secondary" className="me-2" onClick={() => setSortType('hard')}>Hard</Button>
         <Button variant="secondary" onClick={() => setSortType('total')}>Total</Button>
       </div>
-      {isLoading ? ( // Conditional rendering based on isLoading state
+      {isLoading ? (
         <Spinner animation="border" role="status">
           <span className="visually-hidden">Loading...</span>
         </Spinner>

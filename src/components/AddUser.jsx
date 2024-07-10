@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import axios from 'axios';
-import { Container, Form, Button, Alert } from 'react-bootstrap';
+import { Container, Form, Button} from 'react-bootstrap';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
@@ -10,9 +10,9 @@ const AddUser = () => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    axios.post('https://leetcode-one.vercel.app/add_user', { username: username }, {
+    axios.post('https://leetcode-leaderboardbackend.vercel.app/add_user', { username: username }, {
       headers: {
-        'Authorization': token  // Replace with your actual secret token
+        'Authorization': token
       }
     })
       .then(response => {
