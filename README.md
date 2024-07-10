@@ -49,7 +49,7 @@ This project is a web application to track and display the performance of users 
 
 2. **Start the frontend development server**:
     ```sh
-    cd cd leetcode-leaderboard-frontend
+    cd leetcode-leaderboard-frontend
     npm start
     ```
 
