@@ -10,7 +10,7 @@ const DailyProblems = () => {
   useEffect(() => {
     const fetchProblems = async () => {
       try {
-        const response = await axios.get('http://localhost:5000/daily');
+        const response = await axios.get('https://leetcode-leaderboardbackend.vercel.app/daily');
         setProblems(response.data);
         setLoading(false);
       } catch (err) {
