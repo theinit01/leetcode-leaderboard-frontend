@@ -12,6 +12,7 @@ const NavBar = () => {
           <Nav className="ms-auto">
             <Nav.Link as={Link} to="/">Leaderboard</Nav.Link>
             <Nav.Link as={Link} to="/users">Users</Nav.Link>
+            <Nav.Link as={Link} to="/daily_problems">Daily Problems</Nav.Link>
             <Nav.Link as={Link} to="/add_user">Add User</Nav.Link>
             {/* Add more links as needed */}
           </Nav>

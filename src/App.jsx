@@ -5,6 +5,7 @@ import Footer from './components/Footer';
 import Leaderboard from './components/Leaderboard';
 import AddUser from './components/AddUser';
 import UsersPage from './components/UsersPage';
+import DailyProblems from './components/DailyProblems';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 
@@ -18,6 +19,7 @@ function App() {
             <Route path="/" element={<Leaderboard />} />
             <Route path="/add_user" element={<AddUser />} />
             <Route path="/users" element={<UsersPage />} />
+            <Route path="/daily_problems" element={<DailyProblems />} />
           </Routes>
         </div>
       </div>
